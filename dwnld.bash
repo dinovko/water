@@ -1,3 +1,4 @@
+yum install wget
 cd /opt
 mkdir admin
 wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.30/bin/apache-tomcat-9.0.30.tar.gz
