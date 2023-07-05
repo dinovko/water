@@ -1,3 +1,10 @@
+yum install wget unzip 
+cd /opt
+mkdir admin
+wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.30/bin/apache-tomcat-9.0.30.tar.gz
+wget https://github.com/geoserver/geoserver/archive/2.16.2.zip
+wget https://sourceforge.net/projects/geoserver/files/GeoServer/2.16.2/extensions/geoserver-2.16.2-css-plugin.zip/download
+wget https://github.com/dinovko/water/blob/main/geoserver_data.zip
 mkdir /opt/admin/tomcat_9 && tar xf apache-tomcat-9.0.30.tar.gz -C /opt/admin/tomcat_9 --strip-components 1
 sed -i 's/Connector port="8080"/Connector port="8088"/g' /opt/admin/tomcat_9/conf/server.xml
 mkdir /opt/admin/tomcat_geoserver && tar xf apache-tomcat-9.0.30.tar.gz -C /opt/admin/tomcat_geoserver --strip-components 1
